@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description"
+        content="Rysunki na prezent - zamień zdjęcie w wyjątkowy upominek. Skontaktuj się z nami!" />
     <title>Rysunki na prezent</title>
 
     <!-- Bootstrap icons-->
@@ -16,6 +18,10 @@
     <!-- Google Fonts Roboto -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <!-- Inter font-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
     <!-- Css-->
@@ -30,8 +36,8 @@
             style="background-color: #e1f3ff; z-index:1; min-height: 86.59px;">
             <div class="container-fluid justify-content-lg-center">
                 <!-- Logo -->
-                <a class="navbar-brand" href="#"> <img src="/img/logot2.png" height="60" alt="Rysunkinaprezent Logo"
-                        loading="lazy" /></a>
+                <a class="navbar-brand" href="index.html"> <img src="/img/logot2.png" height="60"
+                        alt="Rysunkinaprezent Logo" loading="lazy" /></a>
 
                 <!-- Toggle button (mobile view)-->
                 <button data-mdb-collapse-init class="navbar-toggler" type="button"
@@ -43,26 +49,26 @@
                 <!-- Collapsible wrapper-->
                 <div class="collapse navbar-collapse flex-grow-0 mx-lg-5" id="navbarSupportedContent">
                     <!-- Left links -->
-                    <ul class="navbar-nav text-center text-black">
+                    <ul class="navbar-nav text-center">
                         <!-- Navbar dropdown -->
                         <li class="nav-item dropdown">
-                            <a data-mdb-dropdown-init class="nav-link dropdown-toggle text-dark fw-bold" href="#"
+                            <a data-mdb-dropdown-init class="inter-bold text-1 nav-link dropdown-toggle" href="#"
                                 id="navbarDropdown" role="button" aria-expanded="false">
                                 Zamówienia
                             </a>
                             <!-- Dropdown menu -->
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li>
-                                    <a class="dropdown-item" href="#">Jak złożyć zamówienie?</a>
+                                    <a class="inter-halfbold  dropdown-item" href="#">Jak złożyć zamówienie?</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Cennik</a>
+                                    <a class="inter-halfbold dropdown-item" href="#">Cennik</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Pakowanie zamówień</a>
+                                    <a class="inter-halfbold dropdown-item" href="#">Pakowanie zamówień</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Opinie klientów</a>
+                                    <a class="inter-halfbold dropdown-item" href="#">Opinie klientów</a>
                                 </li>
                             </ul>
                         </li>
@@ -71,17 +77,17 @@
                             <a class="nav-link text-dark fw-bold" href="#">O mnie</a>
                         </li> -->
                         <li class="nav-item">
-                            <a class="nav-link text-dark fw-bold" href="#offer">Oferta</a>
+                            <a class="nav-link inter-bold text-1" href="#offer">Oferta</a>
                         </li>
                         <!--
                         <li class="nav-item">
                             <a class="nav-link text-dark fw-bold" href="#">Prace na sprzedaż</a>
                         </li> -->
                         <li class="nav-item">
-                            <a class="nav-link text-dark fw-bold" href="#gallery">Galeria</a>
+                            <a class="nav-link inter-bold text-1" href="galeria.html">Galeria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark fw-bold" href="#contact">Kontakt</a>
+                            <a class="nav-link inter-bold text-1" href="#contact">Kontakt</a>
                         </li>
                     </ul>
                     <!-- Icons -->
@@ -89,17 +95,17 @@
                         <!-- Icons -->
                         <li class="nav-item me-3 me-lg-0">
                             <a class="nav-link" href="#">
-                                <i class="fab fa-2x fa-facebook text-black"></i>
+                                <i class="fab fa-2x fa-facebook text-1"></i>
                             </a>
                         </li>
                         <li class="nav-item me-3 me-lg-0">
                             <a class="nav-link" href="#">
-                                <i class="fab fa-2x fa-instagram text-black"></i>
+                                <i class="fab fa-2x fa-instagram text-1"></i>
                             </a>
                         </li>
                         <li class="nav-item me-lg-0">
                             <a class="nav-link" href="#">
-                                <i class="fab fa-2x fa-tiktok text-black"></i>
+                                <i class="fab fa-2x fa-tiktok text-1"></i>
                             </a>
                         </li>
                     </ul>
@@ -108,24 +114,21 @@
 
             </div>
         </nav>
+    </header>
 
-        <!-- Background image -->
-        <!-- background-repeat:no-repeat;`
-                background-size:contain;
-                background-position:center;-->
-        <div class="container-fluid p-0 bg-image">
-            <!-- Mask -->
-            <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)">
+    <!--Main Navigation-->
 
-                <!-- Container -->
-                <div class="container justify-content-center d-flex h-100 flex-column">
-
-                    <!-- Call to action -->
-                    <div class="text-white text-center mb-5">
-                        <h1 class="mt-5"><strong>Rysunki na prezent</strong></h1>
-                        <h5 class="mb-4">Zamień zdjęcie w wyjątkowy upominek</h5>
-                    </div>
-                    <!-- Flex container for text and image 
+    <!--Main layout-->
+    <main>
+        <section id="welcome-slide">
+            <div class="container-fluid p-0 bg-image">
+                <div class="mask">
+                    <div class="container justify-content-center d-flex h-100 flex-column">
+                        <div class="text-white text-center mb-5">
+                            <h1 class="mt-5"><strong>Rysunki na prezent</strong></h1>
+                            <h5 class="mb-4">Zamień zdjęcie w wyjątkowy upominek</h5>
+                        </div>
+                        <!-- Flex container for text and image 
                     <div class="d-flex text-white justify-content-center align-items-stretch" style="min-height: 200px;">
                         <p class="mb-0 align-items-center d-flex" style="flex-grow: 1; max-width: 300px;">
                             Jestem Michał, od dzieciństwa uwielbiam rysować. Przekształcam chwile uchwycone na zdjęciach
@@ -135,22 +138,17 @@
                         </p>
                         <img src="/img/portret.png" style="width: 300px; height: 400px; margin-left: 20px;">
                     </div> -->
+                    </div>
                 </div>
             </div>
-        </div>
 
 
-        </div>
+            </div>
 
-        </div>
-    </header>
-
-    <!--Main Navigation-->
-
-    <!--Main layout-->
-    <main>
+            </div>
+        </section>
         <!-- Offer section-->
-        <section class="container-fluid" style="background-color: white;" id="offer">
+        <section class="container-fluid" id="offer">
             <h3 class="fw-bold mt-4 text-center text-black">Oferta</h3>
 
             <div class="row gx-lg-5 mx-lg-4 mx-1">
@@ -160,7 +158,7 @@
                             <div class="card">
                                 <img class="d-block w-100" src="img/pies.jpg" alt="Rysunki zwierzat">
                                 <div class="card-body">
-                                    <h5 class="card-title text-center">Rysunki zwierząt</h5>
+                                    <h5 class="card-title text-center text-black">Rysunki zwierząt</h5>
                                 </div>
                             </div>
                         </div>
@@ -168,7 +166,7 @@
                             <div class="card">
                                 <img class="d-block w-100" src="img/pies2.jpg" alt="Rysunki aut">
                                 <div class="card-body">
-                                    <h5 class="card-title text-center">Rysunki aut</h5>
+                                    <h5 class="card-title text-center text-black">Rysunki aut</h5>
                                 </div>
                             </div>
                         </div>
@@ -176,7 +174,7 @@
                             <div class="card">
                                 <img class="d-block w-100" src="img/kot.jpg" alt="Karykaturki">
                                 <div class="card-body">
-                                    <h5 class="card-title text-center">Karykaturki</h5>
+                                    <h5 class="card-title text-center text-black">Karykaturki</h5>
                                 </div>
                             </div>
                         </div>
@@ -184,7 +182,7 @@
                             <div class="card">
                                 <img class="d-block w-100" src="img/auto.jpg" alt="Rysunki czarno-biale">
                                 <div class="card-body">
-                                    <h5 class="card-title text-center">Rysunki czarno-białe</h5>
+                                    <h5 class="card-title text-center text-black">Rysunki czarno-białe</h5>
                                 </div>
                             </div>
                         </div>
@@ -192,7 +190,7 @@
                             <div class="card">
                                 <img class="d-block w-100" src="img/karykatura.jpg" alt="Rysunki kolorowe">
                                 <div class="card-body">
-                                    <h5 class="card-title text-center">Rysunki kolorowe</h5>
+                                    <h5 class="card-title text-center text-black">Rysunki kolorowe</h5>
                                 </div>
                             </div>
                         </div>
@@ -213,13 +211,14 @@
 
         <!-- contact section-->
         <section class="container-fluid mt-5" id="contact">
-            <div class="row" style="background-color: #e1f3ff;">
-                <div class="col-lg-6 offset-lg-3 col-sm-12 col-md-8 offset-md-2">
-                    <h3 class="fw-bold text-center mt-4 mb-4 text-black">Skontaktuj się ze mną</h3>
-
-                    <p class="fw-bold text-center ms-3 text-black">Wiadomości możesz także kierować na maila:
+            <div class="bg-image"> </div>
+            <div class="row form-style d-flex justify-content-center align-items-center">
+                <div class="col-lg-6 col-sm-12 col-md-8 d-flex justify-content-center align-items-center flex-column"
+                    style="min-height: 100%;">
+                    <h3 class="text-center inter-bold text-1">Skontaktuj się ze mną</h3>
+                    <p class="text-center inter-bold text-1">Wiadomości możesz także kierować na maila:
                         kontakt@rysunkinaprezent.com </p>
-                    <form class="mx-5">
+                    <form class="form">
                         <!-- Name input -->
                         <div class="form-outline mb-4" data-mdb-input-init>
                             <input type="text" id="form4Example1" class="form-control bg-white" />
@@ -239,22 +238,19 @@
                         </div>
 
                         <!-- Submit button -->
-                        <button type="submit" class="btn btn-primary btn-block mb-4" "
+                        <button type="submit" class="btn btn-primary btn-block mb-4"
                             data-mdb-ripple-init>Wyślij</button>
                     </form>
 
-                    <p class=" text-black mx-5" style="font-size:1rem"><small>Administratorem danych zawartych w
-                                korespondencji e-mail jest Michał Mortek, prowadzący działalność pod nazwą
-                                "Rysunki na prezent Michał Mortek". Wysyłając wiadomość,
-                                przekazujesz mi adres e-mail oraz inne dane zawarte w treści wiadomości. Szczegóły
-                                dotyczące
-                                przetwarzania wiadomości dostępne są w polityce prywatności osadzonej na tej
-                                stronie.</small></p>
+                    <p class="mx-5 text-1 justify-content-around" style="font-size:1rem"><small>Administratorem danych
+                            zawartych w korespondencji e-mail jest Michał Mortek, prowadzący działalność pod nazwą
+                            "Rysunki na prezent Michał Mortek". Wysyłając wiadomość, przekazujesz mi adres e-mail oraz
+                            inne dane zawarte w treści wiadomości. Szczegóły dotyczące przetwarzania wiadomości dostępne
+                            są w polityce prywatności osadzonej na tej stronie.</small></p>
                 </div>
-
             </div>
-
         </section>
+
     </main>
     <!--Main layout-->
 
@@ -272,31 +268,33 @@
             let multipleCardCarousel = document.querySelector("#offerCarousel");
 
             if (window.matchMedia("(min-width: 768px)").matches) {
-                let carouselWidth = document.querySelector(".carousel-inner").scrollWidth;
+                let carouselInner = document.querySelector(".carousel-inner");
                 let cardWidth = document.querySelector(".carousel-item").offsetWidth;
+                let carouselWidth = carouselInner.scrollWidth;
                 let scrollPosition = 0;
 
                 document.querySelector("#offerCarousel .carousel-control-next").addEventListener("click", function () {
-                    if (scrollPosition < carouselWidth - cardWidth * 2) { // Zmniejsz liczbę kart widocznych na ekranie
+                    if (scrollPosition < (carouselWidth - carouselInner.clientWidth)) { // dodaj klientWidth, aby dopasować do rzeczywistego rozmiaru
                         scrollPosition += cardWidth;
                     } else {
                         scrollPosition = 0; // Reset to the start when at the end
                     }
-                    document.querySelector("#offerCarousel .carousel-inner").scroll({ left: scrollPosition, behavior: 'smooth' });
+                    carouselInner.scroll({ left: scrollPosition, behavior: 'smooth' });
                 });
 
-                document.querySelector("#offerCarousel .carousel-control-prev").addEventListener("click", function () {git 
+                document.querySelector("#offerCarousel .carousel-control-prev").addEventListener("click", function () {
                     if (scrollPosition > 0) {
                         scrollPosition -= cardWidth;
                     } else {
-                        scrollPosition = carouselWidth - cardWidth * 2; // Go to the last set of cards
+                        scrollPosition = carouselWidth - carouselInner.clientWidth; // uwzględnij clientWidth w obliczeniach
                     }
-                    document.querySelector("#offerCarousel .carousel-inner").scroll({ left: scrollPosition, behavior: 'smooth' });
+                    carouselInner.scroll({ left: scrollPosition, behavior: 'smooth' });
                 });
             } else {
                 multipleCardCarousel.classList.add("slide");
             }
         });
+
     </script>
 
 </body>
