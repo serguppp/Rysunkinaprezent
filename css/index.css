@@ -1,100 +1,143 @@
-/* fonts and text styles */
+/* Fonts and Text Styles */
 
-.inter-regular {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
+.break {
+    display: inline;
+    /* Wyświetlaj w jednej linii */
 }
 
-.inter-halfbold {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
+@media (max-width: 360px) {
+    .break {
+        display: block;
+        /* Zmieniaj na blok, by wprowadzić łamanie linii */
+    }
 }
 
-.inter-bold {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.text-1 {
-    color: #1c3151
-}
-
-/* sections */
-
+/* Body and HTML */
 body,
 html {
     overflow-x: hidden;
-    /* To powinno zablokować przewijanie w poziomie */
+    /* To block horizontal scrolling */
 }
 
+main {
+    margin-top: 70px;
+}
+
+/* Footer */
 footer {
     box-shadow: 0px -6px 8px 0 rgba(22, 22, 26, 0.38);
+    text-align: center;
+    background-color: #28375e;
+    display: flex
 }
 
-/* offer section */
-/* welcome slide */
-#welcome-slide .bg-image .mask{
-    background-color: hsla(0, 0%, 0%, 0.6)
+/* Welcome Slide */
+
+/* Transition for Welcome Slide Text */
+
+.welcome-slide-text {
+    position: relative;
+    margin-block: auto;
 }
 
-#welcome-slide .bg-image {
-    margin-top: 86.59px;
-    background-image: url('../img/bg.png');
-    box-shadow: 0px 6px 8px 0 rgba(22, 22, 26, 0.18);
+#welcome-content {
+    transition: transform 0.5s ease;
+    /* Ensure smooth transition */
 }
 
-@media (min-width: 991.99px) {
-    #welcome-slide .bg-image {
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
+#welcome-content.slide-up {
+    transform: translateY(0);
+    /* Adjust upward movement */
+    transition: transform 0.5s ease;
+    /* Smooth animation */
+}
+
+#about-content {
+    margin-top: 10%;
+    margin-bottom: auto;
+    height: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+
+#welcome-content.slide-down {
+    transform: translateY(0%);
+    transition: transform 0.5 ease;
+}
+
+
+#about-content.show {
+    opacity: 1;
+    visibility: visible;
+    /* Visible when shown */
+}
+
+@media (min-width: 0px) and (max-width: 390px) {
+    #welcome-content {
+        margin-top: 10%;
+    }
+
+    .welcome-slide-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .welcome-slide-text h1 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (min-width: 390.1px) and (max-width: 1199.98px) {
+    #welcome-content {
+        margin-top: 10%;
+    }
+
+    .welcome-slide-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .welcome-slide-text h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1199.99px) {
+    #welcome-content {
+        margin-top: auto;
+    }
+
+    .welcome-slide-text {
         height: 100vh;
     }
-}
 
-@media (max-width: 991.98px) {
-    #welcome-slide .bg-image {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        animation: scrollBackground 10s linear infinite alternate;
-        height: 100vh;
+    .welcome-slide-text h2 {
+        font-size: 2.5rem;
     }
 
-    @keyframes scrollBackground {
-        0% {
-            background-position: left;
-        }
-
-        100% {
-            background-position: right;
-        }
+    .welcome-slide-text h1 {
+        font-size: 3.5rem;
     }
+
 }
 
+/* Offer Section */
 #offer {
-    scroll-margin-top: 86px;
-    background-color: white;
-    box-shadow: 0px 6px 8px 0 rgba(22, 22, 26, 0.18);
-
+    box-shadow: 0px 4px 20px 0 rgba(22, 22, 26, 1);
+    background-color: #28375e;
+    border-radius: 5%;
 }
 
-/* contact section */
 
+/* Contact Section */
 #contact {
-    scroll-margin-top: 86px;
+    scroll-margin-top: 70px;
     box-shadow: 0px -6px 8px 0 rgba(22, 22, 26, 0.18);
     position: relative;
     overflow: hidden;
-    /* Ukrywa nadmiar tła */
+    /* Hides excess background */
     height: 100vh;
-    /* Ustal wysokość kontenera */
+    /* Set container height */
 }
 
 #contact .bg-image {
@@ -119,13 +162,11 @@ footer {
     }
 }
 
-/* form */
-
+/* Form */
 .form-style {
     height: 100%;
     position: relative;
 }
-
 
 .form {
     max-width: 600px;
@@ -145,8 +186,7 @@ footer {
     }
 }
 
-
-/* dropdown menu */
+/* Dropdown Menu */
 @media (max-width: 767.98px) {
     .dropdown-menu {
         left: 0 !important;
@@ -154,8 +194,11 @@ footer {
         text-align: center;
     }
 }
-/* carousel */
 
+/* Carousel */
+
+
+/* Desktop Carousel */
 @media (min-width: 768px) {
     .carousel-inner {
         overflow-x: scroll;
@@ -165,24 +208,31 @@ footer {
 
     .carousel-item {
         margin-right: 0;
-        flex: 0 0 33.3333%;
+        flex: 0 0 100%;
         display: block;
     }
 }
 
 .carousel-inner {
+    overflow: hidden;
+    /* Ukrywa pasek przewijania w karuzeli wewnętrznej */
     padding: 1em;
 }
 
+/* Carousel Card Styles */
 .card {
     margin: 0 .5em;
-    box-shadow: 0px 6px 8px 0 rgba(22, 22, 26, 0.18);
     border: none;
 }
 
+.card-body {
+    box-shadow: 0px -6px 8px 0 rgba(22, 22, 26, 0.38)
+}
+
+/* Carousel Controls */
 .carousel-control-prev,
 .carousel-control-next {
-    background-color: #e1e1e1;
+    background-color: rgb(28, 49, 81);
     width: 6vh;
     height: 6vh;
     border-radius: 50%;
@@ -194,8 +244,3 @@ footer {
 .carousel-control-next-icon {
     height: auto;
 }
-
-
-
-
-/* footer */
