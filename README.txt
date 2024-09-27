@@ -10,6 +10,9 @@ TODO list:
 -> responsive animated navbar                   medium  
 -> create sides design                          high
 -> privacy policy                               low
--> logo                                         high
 -> php messages                                 medium
 -> fix navbar on mobile devices                 medium
+-> index.html href slides                       high
+-> footer responsive                            medium
+-> html styles to .css                          low
+-> remove trash code                            low

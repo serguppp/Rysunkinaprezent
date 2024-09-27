@@ -1,0 +1,16 @@
+footer {
+    box-shadow: 0px -6px 8px 0 rgba(22, 22, 26, 0.38);
+    background-color: #28375e;
+}
+
+.card-body {
+    box-shadow: 0px -6px 8px 0 rgba(22, 22, 26, 0.38)
+}
+
+.img-gallery{
+    box-shadow: 
+    5px 5px 10px rgba(0, 0, 0, 0.18), /* cień w dół i w prawo */
+    -5px -5px 10px rgba(0, 0, 0, 0.18), /* cień w górę i w lewo */
+    5px -5px 10px rgba(0, 0, 0, 0.18), /* cień w górę i w prawo */
+    -5px 5px 10px rgba(0, 0, 0, 0.18); /* cień w dół i w lewo */
+}
