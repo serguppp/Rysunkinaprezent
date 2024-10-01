@@ -25,8 +25,8 @@
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
     <!-- Css-->
-    <link rel="stylesheet" href="css/index.css?v=1.0.4">
-    <link rel="stylesheet" href="css/styles.css?v=1.0.0">
+    <link rel="stylesheet" href="css/index.css?v=1.0.5">
+    <link rel="stylesheet" href="css/styles.css?v=1.0.1">
 </head>
 
 <body>
@@ -218,7 +218,7 @@
                     <h3 class="text-center inter-bold text-1">Skontaktuj się ze mną</h3>
                     <p class="text-center inter-bold text-1">Wiadomości możesz także kierować na maila:
                         kontakt@rysunkinaprezent.com </p>
-                    <form class="form">
+                    <form class="form" method="POST" action="send_email.php">
                         <!-- Name input -->
                         <div class="form-outline mb-4" data-mdb-input-init>
                             <input type="text" id="form4Example1" class="form-control bg-white" />
@@ -255,11 +255,10 @@
     <!--Main layout-->
 
     <!--Footer-->
-    <footer>
-        <div class="container-fluid py-1 d-flex">
-            <p class="ms-lg-3 ms-2" style="color: #e1f3ff; margin:0" href="#"><strong>Rysunki na prezent @ 2024</strong></p>
-            <a class="ms-lg-3 ms-2" style="color: #e1f3ff;" href="#">Polityka prywatności</a>
-        </div>
+    <footer class="container-fluid align-items-center py-1"
+        style="text-align:center; background-color: #28375e; display:flex ">
+        <p class="ms-lg-3 ms-2" style="color: #e1f3ff; margin:0"><strong>Rysunki na prezent @ 2024</strong></p>
+        <a class="ms-lg-3 ms-2" style="color: #e1f3ff;" href="#">Polityka prywatności</a>
     </footer>
     <!--Footer-->
     <!-- MDB -->
