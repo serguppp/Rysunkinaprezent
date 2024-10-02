@@ -24,18 +24,13 @@
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/index.css?v=1.0.5">
+    <link rel="stylesheet" href="css/orders.css?v=1.0.5">
     <link rel="stylesheet" href="css/styles.css?v=1.0.1">
 </head>
 
 <body>
     <!-- Main Navigation -->
     <header>
-        <section id="1">
-            <div class="conainer-fluid">
-                
-            </div>
-        </section>
         <div style="height:70px;">
             <!-- Navbar brand -->
             <nav class="navbar navbar-expand-lg fixed-top navbar-light px-0"
@@ -125,8 +120,84 @@
     </header>
 
     <!-- Main layout -->
+
+
     <main>
-        
+        <section id="orders">
+            <div class="container-fluid">
+                <div class="my-2 my-lg-4">
+                    <h1 class="text-center inter-bold text-1">Zamówienia</h1>
+                </div>
+                <div class="row gx-lg-2 gx-0">
+                    <div class="col-lg-6 col-sm-12 order-column">
+                        <button class="btn btn-white text-1 order-button" id="howToOrderBtn">
+                            <strong>Realizacja zamówienia</strong>
+                        </button>
+                        <div class="order-content" id="howToOrderContent">
+                            <div class="row gx-lg-2 gx-0">
+                                <div class="col-lg-6 col-sm-12">
+                                    <p class="mt-2"><strong>Zamówienie możesz złożyć:</strong></p>
+                                    <ul>
+                                        <li>
+                                            w wiadomości prywatnej na Instagramie,
+                                        </li>
+                                        <li>
+                                            w wiadomości prywatnej na Facebooku,
+                                        </li>
+                                        <li>
+                                            kontaktując się na maila <strong>kontakt@rysunkinaprezent.com</strong>,
+                                        </li>
+                                        <li>
+                                            w formularzu kontaktowym na stronie głównej.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-sm-12">
+                                    <p class="mt-2"><strong>W wiadomości umieść:</strong></p>
+                                    <ul>
+                                        <li>
+                                            zdjęcie lub kilka zdjęć,
+                                        </li>
+                                        <li>
+                                            rodzaj rysunku (auto, zwierzę, karykaturka),
+                                        </li>
+                                        <li>
+                                            format rysunku (A4, A3, A2, A1),
+                                        </li>
+                                        <li>
+                                            ilość kartek oraz ilość postaci na jednej kartce,
+                                        </li>
+                                        <li>
+                                            formę wysyłki (paczkomat, kurier, wysyłka zagraniczna).
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p><strong>W razie potrzeby udzielę Ci wskazówek, jak dobrać dobre zdjęcie oraz pomogę w aranżacji rysunku.</strong></p>
+                            <p>W odpowiedzi na zamówienie wysyłam Ci cenę rysunku oraz czas realizacji rysunku. Po skończonej pracy wysyłam Ci zdjęcie rysunku do akceptacji.</p>
+                            <p>Rysunek wykonuję po wpłaceniu 50% zadeklarowanej kwoty. Po akceptacji rysunku oraz wpłaceniu drugiej połowy kwoty, wysyłam paczkę.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 package-column">
+                        <button class="btn btn-white text-1 order-button" id="packageButton">
+                            <strong>Pakowanie zamówień</strong> </button>
+                            <p>Wkrótce...</p>
+                        <div class="order-content" id="packageContent">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <h2 class="text-1">Cennik</h2>
+                        <a href="https://www.instagram.com/stories/highlights/18071504287588132/">Kliknij w napis, aby przejść do cennika.</a>
+                    </div>
+                    <div class="col-12 text-center">
+                        <h2 class="text-1">Opinie</h2>
+                        <p>Wkrótce...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
@@ -137,6 +208,31 @@
     </footer>
 
     <!-- MDB -->
+    <script>
+        document.getElementById("howToOrderBtn").addEventListener("click", function () {
+            var content = document.getElementById("howToOrderContent");
+            if (content.style.display == "none") {
+                content.style.display = "block";
+            }
+            else {
+                content.style.display = "none";
+            }
+        });
+    </script>
+
+    <script>
+        document.getElementById("packageButton").addEventListener("click", function () {
+            var content = document.getElementById("packageContent");
+            if (content.style.display == "none") {
+                content.style.display = "block";
+            }
+            else {
+                content.style.display = "none";
+            }
+        });
+    </script>
+
+
     <script type="text/javascript" src="js/mdb.umd.min.js"></script>
 </body>
 

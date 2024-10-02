@@ -1,0 +1,27 @@
+.order-column{
+    text-align: center
+}
+
+.order-button{
+    width:50%;
+    background-color: #e1f3ff;
+}
+
+.order-content{
+    width:75%;  
+    overflow: hidden;
+    display: none;
+    transition: max-height 0.4s ease-out;
+    text-align: left;
+    margin-left:10%;
+}
+
+.order-content p{
+    margin-bottom:1%;
+    text-align: center;
+}
+
+
+.package-column{
+    text-align: center;
+}
