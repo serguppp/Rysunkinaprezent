@@ -1,5 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    var_dump($_POST); // Add this line for debugging
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
     $message = htmlspecialchars($_POST['message']);
@@ -17,6 +18,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     } else {
         echo "Wszystkie pola muszą być wypełnione.";
+        echo $to;
+        echo $subject;
+        echo $body;
+        echo $headers;
     }
 }
 ?>

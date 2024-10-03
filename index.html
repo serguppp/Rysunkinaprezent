@@ -87,7 +87,7 @@
                 <a class="nav-link text-dark fw-bold" href="#">Prace na sprzedaż</a>
             </li> -->
                             <li class="nav-item">
-                                <a class="nav-link inter-bold text-1" href="gallery.html">Galeria</a>
+                                <a class="nav-link inter-bold text-1" href="gallery">Galeria</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link inter-bold text-1" href="index.html#contact">Kontakt</a>
@@ -151,7 +151,7 @@
                                         indywidualnie, aby oddać unikalny charakter Twojego zdjęcia.</p>
                             </div>
                             <button id="hideAboutBtn" class="btn text-white btn-lg" style="background-color: #28375e" ;
-                                data-mdb-ripple-init data-mdb-ripple-color="white">Schowaj</button>
+                                data-mdb-ripple-init>Schowaj</button>
                         </div>
                     </div>
                     <!-- First column -->
@@ -221,20 +221,20 @@
                     <form class="form" method="POST" action="send_email.php">
                         <!-- Name input -->
                         <div class="form-outline mb-4" data-mdb-input-init>
-                            <input type="text" id="form4Example1" class="form-control bg-white" />
-                            <label class="form-label" for="form4Example1">Imię</label>
+                            <input type="text" id="nameForm" name="name" class="form-control bg-white" />
+                            <label class="form-label" for="nameForm">Imię</label>
                         </div>
 
                         <!-- Email input -->
                         <div class="form-outline mb-4" data-mdb-input-init>
-                            <input type="email" id="form4Example2" class="form-control bg-white" />
-                            <label class="form-label" for="form4Example2">Adres e-mail</label>
+                            <input type="email" id="emailForm" name="email" class="form-control bg-white" />
+                            <label class="form-label" for="emailForm">Adres e-mail</label>
                         </div>
 
                         <!-- Message input -->
                         <div class="form-outline mb-4" data-mdb-input-init>
-                            <textarea class="form-control bg-white" id="form4Example3" rows="4"></textarea>
-                            <label class="form-label" for="form4Example3">Wiadomość</label>
+                            <textarea class="form-control bg-white" name="message" id="messageForm" rows="4"></textarea>
+                            <label class="form-label" for="messageForm">Wiadomość</label>
                         </div>
 
                         <!-- Submit button -->
