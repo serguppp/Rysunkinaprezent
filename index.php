@@ -120,7 +120,7 @@
                     <h3 class="text-center inter-bold text-1">Skontaktuj się ze mną</h3>
                     <p class="text-center inter-bold text-1">Wiadomości możesz także kierować na maila:
                         kontakt@rysunkinaprezent.com </p>
-                    <form id="contact-form" class="form" method="POST" action="send_email.php">
+                    <form id="contact-form" class="form">
                         <!-- Name input -->
                         <div class="form-outline mb-4" data-mdb-input-init>
                             <input type="text" id="nameForm" name="name" class="form-control bg-white" />
@@ -248,6 +248,7 @@
                 });
         });
     </script>
+
 
 </body>
 
