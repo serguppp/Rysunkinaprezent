@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl-PL">
 
 <head>
     <meta charset="UTF-8" />
@@ -9,103 +9,14 @@
         content="Rysunki na prezent - zamień zdjęcie w wyjątkowy upominek. Skontaktuj się z nami!" />
     <title>Rysunki na prezent</title>
 
-    <!-- Bootstrap icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- MDB icon -->
-    <link rel="icon" href="img/logo3.png" type="image/x-icon" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <!-- Google Fonts Roboto -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
-    <!-- Inter font-->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-    <!-- MDB -->
-    <link rel="stylesheet" href="css/mdb.min.css" />
-    <!-- Css-->
-    <link rel="stylesheet" href="css/index.css?v=1.0.5">
-    <link rel="stylesheet" href="css/styles.css?v=1.0.1">
+    <?php include 'head.php'; ?>
+    <link rel="stylesheet" href="css/index.css?v=1.1.0">
 </head>
 
 <body>
     <!--Main Navigation-->
     <header>
-        <div style="height:70px;">
-            <!-- Navbar brand -->
-            <nav class="navbar navbar-expand-lg fixed-top navbar-light px-0"
-                style="background-color: #e1f3ff; z-index:3; min-height:70px;">
-                <div class="container-fluid justify-content-lg-center">
-                    <!-- Logo -->
-                    <a class="navbar-brand" href="index.html"> <img src="/img/logo3.png" alt="Rysunkinaprezent Logo"
-                            loading="lazy" style="width: 40px; height:40px;" /></a>
-
-                    <!-- Toggle button (mobile view)-->
-                    <button data-mdb-collapse-init class="navbar-toggler" type="button"
-                        data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars"></i>
-                    </button>
-
-                    <!-- Collapsible wrapper-->
-                    <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-                        <!-- Left links -->
-                        <ul class="navbar-nav text-center">
-                            <!-- Navbar dropdown -->
-                            <li class="nav-item dropdown">
-                                <a data-mdb-dropdown-init class="inter-bold text-1 nav-link dropdown-toggle"
-                                    href="orders.html" id="navbarDropdown" role="button" aria-expanded="false">
-                                    Zamówienia
-                                </a>
-                                <!-- Dropdown menu -->
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li>
-                                        <a class="inter-bold500  dropdown-item" href="orders.html">Jak złożyć
-                                            zamówienie?</a>
-                                    </li>
-                                    <li>
-                                        <a class="inter-bold500 dropdown-item" href="orders.html">Cennik</a>
-                                    </li>
-                                    <li>
-                                        <a class="inter-bold500 dropdown-item" href="orders.html">Pakowanie zamówień</a>
-                                    </li>
-                                    <li>
-                                        <a class="inter-bold500 dropdown-item" href="orders.html">Opinie klientów</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link inter-bold text-1" href="gallery.html">Galeria</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link inter-bold text-1" href="index.html#contact">Kontakt</a>
-                            </li>
-                        </ul>
-                        <!-- Icons -->
-                        <ul class="navbar-nav justify-content-center flex-row">
-                            <li class="nav-item me-3 me-lg-0">
-                                <a class="nav-link" href="#">
-                                    <i class="fab fa-2x fa-facebook text-1"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item me-3 me-lg-0">
-                                <a class="nav-link" href="https://www.instagram.com/rysunki_na_prezent/">
-                                    <i class="fab fa-2x fa-instagram text-1"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item me-lg-0">
-                                <a class="nav-link" href="https://www.tiktok.com/@mmortek_">
-                                    <i class="fab fa-2x fa-tiktok text-1"></i>
-                                </a>
-                            </li>
-                        </ul>
-
-                    </div>
-
-                </div>
-            </nav>
-        </div>
+        <?php include 'navbar.php'; ?>
     </header>
 
     <!--Main Navigation-->
@@ -127,24 +38,23 @@
                                 mnie</button>
                         </div>
                         <!-- Hidden "O mnie" content -->
-                        <div id="aboutContent" class="row about-content">
-                                <div class="col-6 d-flex flex-column justify-content-center align-items-center">
-                                    <h3 class="text-1 inter-bold">O mnie</h3>
-                                    <p class="inter-bold500">Jestem Michał, mam 21 lat, uwielbiam rysować od
-                                        kiedy
-                                        pamiętam. Przekształcam
-                                        chwile uchwycone na zdjęciach w wyjątkowe rysunki. Każde zamówienie
-                                        traktuję
-                                        indywidualnie, aby oddać unikalny charakter Twojego zdjęcia.</p>
+                        <div id="aboutContent" class="row about-content justify-content-center align-items-center">
+                            <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+                                <h3 class="text-1 inter-bold">O mnie</h3>
+                                <p class="text-1 inter-bold500">Jestem Michał, mam 21 lat, uwielbiam rysować od
+                                    kiedy
+                                    pamiętam. Przekształcam
+                                    chwile uchwycone na zdjęciach w wyjątkowe rysunki. Każde zamówienie
+                                    traktuję
+                                    indywidualnie, aby oddać unikalny charakter Twojego zdjęcia.</p>
 
-                                        <button id="hideAboutBtn" class="btn text-white btn-lg" style="background-color: #28375e; width:auto;" ;
-                                        data-mdb-ripple-init>Schowaj</button>
-                                </div>
-
-                                <div class="col-6 text-center">
-                                    <img class="face-img" src="img/face.png" alt="Face">
-                                </div>
+                                <button id="hideAboutBtn" class="btn text-white btn-lg" style="background-color: #28375e; width:auto;" ;
+                                    data-mdb-ripple-init>Schowaj</button>
                             </div>
+                            <div class="col-5 justify-content-center align-items-center text-center" style="padding:0;">
+                                <img class="face-img" src="img/face.png" alt="Face">
+                            </div>
+                        </div>
                     </div>
                     <!-- First column -->
 
@@ -210,7 +120,7 @@
                     <h3 class="text-center inter-bold text-1">Skontaktuj się ze mną</h3>
                     <p class="text-center inter-bold text-1">Wiadomości możesz także kierować na maila:
                         kontakt@rysunkinaprezent.com </p>
-                    <form class="form" method="POST" action="send_email.php">
+                    <form id="contact-form" class="form" method="POST" action="send_email.php">
                         <!-- Name input -->
                         <div class="form-outline mb-4" data-mdb-input-init>
                             <input type="text" id="nameForm" name="name" class="form-control bg-white" />
@@ -247,16 +157,14 @@
     <!--Main layout-->
 
     <!--Footer-->
-    <footer class="container-fluid align-items-center py-1"
-        style="text-align:center; background-color: #28375e; display:flex ">
-        <p class="ms-lg-3 ms-2" style="color: #e1f3ff; margin:0"><strong>Rysunki na prezent @ 2024</strong></p>
-        <a class="ms-lg-3 ms-2" style="color: #e1f3ff;" href="#">Polityka prywatności</a>
+    <footer>
+        <?php include 'footer.php'; ?>
     </footer>
     <!--Footer-->
     <!-- MDB -->
     <script type="text/javascript" src="js/mdb.umd.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             let multipleCardCarousel = document.querySelector("#offerCarousel");
 
             if (window.matchMedia("(min-width: 768px)").matches) {
@@ -265,58 +173,82 @@
                 let carouselWidth = carouselInner.scrollWidth;
                 let scrollPosition = 0;
 
-                document.querySelector("#offerCarousel .carousel-control-next").addEventListener("click", function () {
-                    if (scrollPosition < (carouselWidth - carouselInner.clientWidth)) { // dodaj klientWidth, aby dopasować do rzeczywistego rozmiaru
+                document.querySelector("#offerCarousel .carousel-control-next").addEventListener("click", function() {
+                    if (scrollPosition < (carouselWidth - carouselInner.clientWidth)) {
                         scrollPosition += cardWidth;
                     } else {
-                        scrollPosition = 0; // Reset to the start when at the end
+                        scrollPosition = 0;
                     }
-                    carouselInner.scroll({ left: scrollPosition, behavior: 'smooth' });
+                    carouselInner.scroll({
+                        left: scrollPosition,
+                        behavior: 'smooth'
+                    });
                 });
 
-                document.querySelector("#offerCarousel .carousel-control-prev").addEventListener("click", function () {
+                document.querySelector("#offerCarousel .carousel-control-prev").addEventListener("click", function() {
                     if (scrollPosition > 0) {
                         scrollPosition -= cardWidth;
                     } else {
-                        scrollPosition = carouselWidth - carouselInner.clientWidth; // uwzględnij clientWidth w obliczeniach
+                        scrollPosition = carouselWidth - carouselInner.clientWidth;
                     }
-                    carouselInner.scroll({ left: scrollPosition, behavior: 'smooth' });
+                    carouselInner.scroll({
+                        left: scrollPosition,
+                        behavior: 'smooth'
+                    });
                 });
             } else {
                 multipleCardCarousel.classList.add("slide");
             }
         });
-
     </script>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             const aboutContent = document.getElementById('aboutContent');
             const showAboutBtn = document.getElementById('showAboutBtn');
             const hideAboutBtn = document.getElementById('hideAboutBtn');
             const welcomeContent = document.getElementById('welcomeContent');
 
-            showAboutBtn.addEventListener('click', function () {
-                aboutContent.classList.add('show');
+            showAboutBtn.addEventListener('click', function() {
                 welcomeContent.classList.add('hide');
-                // welcomeContent.classList.add('slide-up');
+                aboutContent.classList.add('show');
             });
 
-            hideAboutBtn.addEventListener('click', function () {
+            hideAboutBtn.addEventListener('click', function() {
                 aboutContent.classList.remove('show');
                 welcomeContent.classList.remove('hide');
 
-                //setTimeout(() => {
-                // welcomeContent.classList.remove('slide-up');
-                //}, 0); // Wait for the opacity transition to finish
             });
         });
+    </script>
 
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
 
+            // Collect form data
+            let formData = new FormData(this);
+
+            // Send form data via AJAX
+            fetch("send_email.php", {
+                    method: "POST",
+                    body: formData
+                })
+                .then(response => response.text())
+                .then(result => {
+                    if (result.trim() === "success") {
+                        alert("Wiadomość została wysłana pomyślnie!");
+                    } else {
+                        alert("Błąd wysyłania wiadomości. Spróbuj ponownie.");
+                    }
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                    alert("Wystąpił błąd. Proszę spróbować później.");
+                });
+        });
     </script>
 
 </body>
 
 </html>
-
-<!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fcodesupply.co%2Fabout-me-page-examples%2F&psig=AOvVaw0Mx0zy7v9kPPhIq1cgsO0W&ust=1727211117997000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJiFyYT52YgDFQAAAAAdAAAAABAZ-->

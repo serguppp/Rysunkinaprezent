@@ -19,24 +19,39 @@ html {
     /* To block horizontal scrolling */
 }
 
-/* Welcome Slide */
-
-/* Transition for Welcome Slide Text */
-
 .welcome-content {
-    min-height:50vh;
+    min-height:60vh;
+    height:auto;
     margin: auto;
-    /* Ensure smooth transition */
 }
 
 .welcome-content-page{
-    transition: transform 0.5s ease;
     opacity:1;
-    visibility: visible;
+    transition: opacity 0.25s ease-in-out;
 }
 .welcome-content-page.hide{
-    opacity:0;
-    visibility:hidden;
+    opacity:0.001;
+}
+
+.about-content {
+    z-index: -1;
+    margin: auto;
+    width: auto;
+    position: absolute;
+    height: auto;
+    opacity: 0.001;
+    font-size: auto;
+    transition: opacity 0.25s ease-in-out;
+
+}
+.about-content.show {
+    z-index: 1;
+    opacity: 1;
+}
+
+.face-img {
+    width: 100%;
+    height: auto;
 }
 
 .welcome-content h1,
@@ -48,6 +63,11 @@ html {
     min-height: 100vh;
 }
 
+@media (max-width: 426px){
+    .about-content p{
+        font-size: 0.75rem;
+    }
+}
 @media (min-width: 0px) and (max-width: 390px) {
     .welcome-slide-text h2 {
         font-size: 1.6rem;
@@ -56,6 +76,7 @@ html {
     .welcome-slide-text h1 {
         font-size: 1.7rem;
     }
+
 }
 
 @media (min-width: 390.1px) and (max-width: 1199.98px) {
@@ -77,30 +98,6 @@ html {
         font-size: 3.5rem;
     }
 
-}
-
-.about-content {
-    margin: auto;
-    width: auto;
-    position: absolute;
-    height: auto;
-    opacity: 0; 
-    visibility: hidden;
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-    font-size: auto;
-}
-.about-content.show {
-    opacity: 1;
-    visibility: visible;
-    /* Visible when shown */
-}
-
-.face-img {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    width: 80%;
-    height: auto;
 }
 
 /* Offer Section */
@@ -188,7 +185,6 @@ html {
 
 .carousel-inner {
     overflow: hidden;
-    /* Ukrywa pasek przewijania w karuzeli wewnętrznej */
     padding: 1em;
 }
 

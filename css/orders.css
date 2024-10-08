@@ -8,7 +8,7 @@ html{
 
 
 .order-content{
-    width:80%;  
+    width:auto;
     height:auto;
     overflow: hidden;
     display: none;
@@ -30,7 +30,7 @@ html{
 }
 
 .package-content{
-    width:80%;  
+    width: auto; 
     overflow: hidden;
     display: none;
     transition: max-height 0.4s ease-out;
@@ -75,6 +75,11 @@ html{
     color: #28375e;
 }
 
+@media (max-width: 374px) {
+    .pricing-col-a, .pricing-col-b, .pricing-col-c{
+        font-size: 0.75rem;
+    }
+}
 .pricing-col-blank{
     display: flex;
     flex-direction: column-reverse;

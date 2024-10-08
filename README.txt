@@ -6,13 +6,13 @@ https://mdbootstrap.com/docs/standard/
 
 TODO list:
 
-                what            |               priority
--> responsive animated navbar                   medium  
--> create sides design                          high
--> privacy policy                               low
--> php messages                                 medium
--> fix navbar on mobile devices                 medium
--> index.html href slides                       high
--> footer responsive                            medium
--> html styles to .css                          low
--> remove trash code                            low
+                what            |               priority                |           status
+-> responsive animated navbar                   medium                              abandoned
+-> create sides design                          high                                done
+-> privacy policy                               low                                 -
+-> php messages                                 medium                              done
+-> fix navbar on mobile devices                 medium                              done
+-> index.html href slides                       high                                abandoned
+-> footer responsive                            medium                              done
+-> html styles to .css                          low                                 in progress
+-> remove trash code                            low                                 in progress
