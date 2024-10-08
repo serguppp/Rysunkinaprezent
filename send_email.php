@@ -1,6 +1,5 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    var_dump($_POST); // Add this line for debugging
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
     $message = htmlspecialchars($_POST['message']);
@@ -12,16 +11,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $headers = "From: $email";
 
         if (mail($to, $subject, $body, $headers)) {
-            echo "Wiadomość została wysłana.";
+            echo "success"; 
         } else {
             echo "Wystąpił błąd podczas wysyłania wiadomości.";
         }
     } else {
         echo "Wszystkie pola muszą być wypełnione.";
-        echo $to;
-        echo $subject;
-        echo $body;
-        echo $headers;
     }
 }
 ?>

@@ -120,7 +120,7 @@
                     <h3 class="text-center inter-bold text-1">Skontaktuj się ze mną</h3>
                     <p class="text-center inter-bold text-1">Wiadomości możesz także kierować na maila:
                         kontakt@rysunkinaprezent.com </p>
-                    <form id="contact-form" class="form">
+                    <form id="contactForm" class="form">
                         <!-- Name input -->
                         <div class="form-outline mb-4" data-mdb-input-init>
                             <input type="text" id="nameForm" name="name" class="form-control bg-white" />
@@ -223,29 +223,35 @@
     </script>
 
     <script>
-        document.getElementById("contactForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent the form from submitting the traditional way
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.getElementById("contactForm");
 
-            // Collect form data
-            let formData = new FormData(this);
+            if (form) {
+                form.addEventListener("submit", function(event) {
+                    event.preventDefault(); // Prevent the form from submitting the traditional way
 
-            // Send form data via AJAX
-            fetch("send_email.php", {
-                    method: "POST",
-                    body: formData
-                })
-                .then(response => response.text())
-                .then(result => {
-                    if (result.trim() === "success") {
-                        alert("Wiadomość została wysłana pomyślnie!");
-                    } else {
-                        alert("Błąd wysyłania wiadomości. Spróbuj ponownie.");
-                    }
-                })
-                .catch(error => {
-                    console.error("Error:", error);
-                    alert("Wystąpił błąd. Proszę spróbować później.");
+                    let formData = new FormData(this);
+
+                    fetch("send_email.php", {
+                            method: "POST",
+                            body: formData
+                        })
+                        .then(response => response.text())
+                        .then(result => {
+                            if (result.trim() === "success") {
+                                alert("Wiadomość została wysłana pomyślnie!");
+                            } else {
+                                alert(result); 
+                            }
+                        })
+                        .catch(error => {
+                            console.error("Error:", error);
+                            alert("Wystąpił błąd. Proszę spróbować później.");
+                        });
                 });
+            } else {
+                console.error("Form element not found");
+            }
         });
     </script>
 
