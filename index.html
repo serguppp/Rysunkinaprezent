@@ -75,19 +75,8 @@
                                     </li>
                                 </ul>
                             </li>
-                            <!--
-            <li class="nav-item">
-                <a class="nav-link text-dark fw-bold" href="#">O mnie</a>
-            </li> 
-            <li class="nav-item">
-                <a class="nav-link inter-bold text-1" href="#offer">Oferta</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link text-dark fw-bold" href="#">Prace na sprzedaż</a>
-            </li> -->
                             <li class="nav-item">
-                                <a class="nav-link inter-bold text-1" href="gallery">Galeria</a>
+                                <a class="nav-link inter-bold text-1" href="gallery.html">Galeria</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link inter-bold text-1" href="index.html#contact">Kontakt</a>
@@ -95,7 +84,6 @@
                         </ul>
                         <!-- Icons -->
                         <ul class="navbar-nav justify-content-center flex-row">
-                            <!-- Icons -->
                             <li class="nav-item me-3 me-lg-0">
                                 <a class="nav-link" href="#">
                                     <i class="fab fa-2x fa-facebook text-1"></i>
@@ -126,38 +114,42 @@
     <main>
         <section>
             <div class="container-fluid">
-                <div class="row no-gutters mx-lg-2 ">
+                <div class="welcome-slide row mx-lg-2 mx-0">
                     <!-- First column -->
-                    <div
-                        class="welcome-slide-text col-lg-6 d-flex flex-column justify-content-center align-items-center">
-                        <div id="welcome-content">
-                            <div class="">
-                                <h2 class="text-1 inter-bold400">Michał Mortek</h2>
-                                <h1 class="text-1 inter-bold text-uppercase">
-                                    <span class="break">Rysunki</span> na prezent
-                                </h1>
-                            </div>
-                            <button id="showAboutBtn" class="btn text-white btn-lg" style="background-color: #28375e" ;
-                                type="button" data-mdb-ripple-init>O mnie</button>
+                    <div class="col-lg-6 welcome-content d-flex flex-column justify-content-center align-items-center">
+                        <div id="welcomeContent" class="welcome-content-page row">
+                            <h2 class="text-1 inter-bold400">Michał Mortek</h2>
+                            <h1 class="text-1 inter-bold text-uppercase">
+                                <span class="break">Rysunki</span> na prezent
+                            </h1>
+                            <button id="showAboutBtn" class="btn text-white btn-lg"
+                                style="background-color: #28375e; width:auto; " ; type="button" data-mdb-ripple-init>O
+                                mnie</button>
                         </div>
-
                         <!-- Hidden "O mnie" content -->
-                        <div id="about-content" class="d-flex flex-column justify-content-center align-items-center">
-                            <div class="d-flex flex-column justify-content-center align-items-center ">
-                                <h3 class="text-1 inter-bold">O mnie</h2>
-                                    <p class="inter-bold500">Jestem Michał, mam 21 lat, uwielbiam rysować od kiedy
+                        <div id="aboutContent" class="row about-content">
+                                <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+                                    <h3 class="text-1 inter-bold">O mnie</h3>
+                                    <p class="inter-bold500">Jestem Michał, mam 21 lat, uwielbiam rysować od
+                                        kiedy
                                         pamiętam. Przekształcam
-                                        chwile uchwycone na zdjęciach w wyjątkowe rysunki. Każde zamówienie traktuję
+                                        chwile uchwycone na zdjęciach w wyjątkowe rysunki. Każde zamówienie
+                                        traktuję
                                         indywidualnie, aby oddać unikalny charakter Twojego zdjęcia.</p>
+
+                                        <button id="hideAboutBtn" class="btn text-white btn-lg" style="background-color: #28375e; width:auto;" ;
+                                        data-mdb-ripple-init>Schowaj</button>
+                                </div>
+
+                                <div class="col-6 text-center">
+                                    <img class="face-img" src="img/face.png" alt="Face">
+                                </div>
                             </div>
-                            <button id="hideAboutBtn" class="btn text-white btn-lg" style="background-color: #28375e" ;
-                                data-mdb-ripple-init>Schowaj</button>
-                        </div>
                     </div>
                     <!-- First column -->
 
                     <!-- Second column-->
-                    <div class="col-lg-6 mt-5 mt-lg-0 mb-5 mb-lg-0 d-flex justify-content-center align-items-center ">
+                    <div class="col-lg-6 mb-5 mb-lg-0 d-flex justify-content-center align-items-center ">
                         <section class="container-fluid" id="offer">
                             <h3 class="fw-bold text-center text-white mt-4">Oferta</h3>
                             <div class="row ">
@@ -299,18 +291,20 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const aboutContent = document.getElementById('about-content');
+            const aboutContent = document.getElementById('aboutContent');
             const showAboutBtn = document.getElementById('showAboutBtn');
             const hideAboutBtn = document.getElementById('hideAboutBtn');
-            const welcomeContent = document.getElementById('welcome-content');
+            const welcomeContent = document.getElementById('welcomeContent');
 
             showAboutBtn.addEventListener('click', function () {
                 aboutContent.classList.add('show');
+                welcomeContent.classList.add('hide');
                 // welcomeContent.classList.add('slide-up');
             });
 
             hideAboutBtn.addEventListener('click', function () {
                 aboutContent.classList.remove('show');
+                welcomeContent.classList.remove('hide');
 
                 //setTimeout(() => {
                 // welcomeContent.classList.remove('slide-up');

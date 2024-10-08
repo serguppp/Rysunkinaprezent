@@ -23,50 +23,32 @@ html {
 
 /* Transition for Welcome Slide Text */
 
-.welcome-slide-text {
-    position: relative;
-    margin-block: auto;
-}
-
-#welcome-content {
-    transition: transform 0.5s ease;
+.welcome-content {
+    min-height:50vh;
+    margin: auto;
     /* Ensure smooth transition */
 }
 
-#welcome-content.slide-up {
-    transform: translateY(0);
-    /* Adjust upward movement */
+.welcome-content-page{
     transition: transform 0.5s ease;
-    /* Smooth animation */
-}
-
-#about-content {
-    margin-top: 10%;
-    margin-bottom: auto;
-    height: auto;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-}
-
-
-#welcome-content.slide-down {
-    transform: translateY(0%);
-    transition: transform 0.5 ease;
-}
-
-
-#about-content.show {
-    opacity: 1;
+    opacity:1;
     visibility: visible;
-    /* Visible when shown */
+}
+.welcome-content-page.hide{
+    opacity:0;
+    visibility:hidden;
+}
+
+.welcome-content h1,
+.welcome-content h2 {
+    padding: 0;
+}
+
+.welcome-slide {
+    min-height: 100vh;
 }
 
 @media (min-width: 0px) and (max-width: 390px) {
-    #welcome-content {
-        margin-top: 10%;
-    }
-
     .welcome-slide-text h2 {
         font-size: 1.6rem;
     }
@@ -77,10 +59,6 @@ html {
 }
 
 @media (min-width: 390.1px) and (max-width: 1199.98px) {
-    #welcome-content {
-        margin-top: 10%;
-    }
-
     .welcome-slide-text h2 {
         font-size: 1.8rem;
     }
@@ -91,14 +69,6 @@ html {
 }
 
 @media (min-width: 1199.99px) {
-    #welcome-content {
-        margin-top: auto;
-    }
-
-    .welcome-slide-text {
-        height: 100vh;
-    }
-
     .welcome-slide-text h2 {
         font-size: 2.5rem;
     }
@@ -107,6 +77,30 @@ html {
         font-size: 3.5rem;
     }
 
+}
+
+.about-content {
+    margin: auto;
+    width: auto;
+    position: absolute;
+    height: auto;
+    opacity: 0; 
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    font-size: auto;
+}
+.about-content.show {
+    opacity: 1;
+    visibility: visible;
+    /* Visible when shown */
+}
+
+.face-img {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: auto;
 }
 
 /* Offer Section */

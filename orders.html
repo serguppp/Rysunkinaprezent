@@ -120,15 +120,13 @@
     </header>
 
     <!-- Main layout -->
-
-
     <main>
-        <section id="orders">
-            <div class="container-fluid">
-                <div class="my-2 my-lg-4">
-                    <h1 class="text-center inter-bold text-1">Zamówienia</h1>
-                </div>
-                <div class="row gx-lg-2 gx-0 gy-lg-0 gy-3">
+        <div class="container-fluid">
+            <div class="mt-3">
+                <h1 class="text-center inter-bold text-1">Zamówienia</h1>
+            </div>  
+            <div class="row">
+                <div class="row orders text-center  gy-4 pb-4">
                     <div class="col-lg-6 col-sm-12 order-column">
                         <button class="btn btn-white text-1 order-button" id="howToOrderBtn" type="button"
                             data-mdb-ripple-init style="width:50%; background-color: #e1f3ff">
@@ -182,9 +180,10 @@
                                 <p>Rysunek wykonuję po wpłaceniu 50% zadeklarowanej kwoty. Po akceptacji rysunku oraz
                                     wpłaceniu drugiej połowy kwoty, wysyłam paczkę.</p>
                             </div>
-
+    
                         </div>
                     </div>
+                    
                     <div class="col-lg-6 col-sm-12 package-column">
                         <button class="btn btn-white text-1 order-button" id="packageButton" type="button"
                             data-mdb-ripple-init style="width:50%; background-color: #e1f3ff;">
@@ -207,260 +206,291 @@
                             <p></p>
                         </div>
                     </div>
-                    <div class="col-12 text-center">
-                        <h2 class="text-1">Cennik</h2>
-                        <div class="price-content">
-                            <div class="row gx-lg-2 gx-0 text-center">
-                                <div class="col-lg-4 col-sm-12">
+                </div>
+
+                <div class="col-12 text-center mt-3 pricing">
+                    <h2 class="text-1">Cennik</h2>
+                    <div class="price-content mx-2">
+                        <div class="row gx-2 gy-3">
+                            <div class="col-lg-4 col-sm-12 inter-bold500">
+                                <div>
                                     <button class="btn btn-lg btn-white text-1 car-button" id="packageButton"
                                         type="button" data-mdb-ripple-init
                                         style="width:50%; height:100%; background-color: #e1f3ff;">
-                                        <strong>Samochody, motocykle czarnobiałe</strong> </button>
+                                        <span style="display:block;"><strong>Pojazdy</strong></span>
+                                        <span><strong>czarnobiałe</strong></span>                                
+                                    </div>
+
+                                <div class="car-pricing py-2">
+                                    <div class="text-center justify-content-center align-items-center ">
+                                        <p class="text-1" style="margin:0;">Ilość obiektów</p>
+                                    </div>
+
+                                    <div class="row gx-1 mx-1 mt-2 justify-content-center ">
+                                        <div class="pricing-col-a">
+                                            Format
+                                        </div>
+                                        <div class="pricing-col-b">
+                                            1
+                                        </div>
+                                        <div class="pricing-col-b">
+                                            2
+                                        </div>
+                                        <div class="pricing-col-b">
+                                            3
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="row gx-1 mx-1 mt-2 justify-content-center align-items-center text-center">
+                                        <div class="pricing-col-b">
+                                            A4
+                                        </div>
+                                        <div class="pricing-col-c">
+                                            200zł
+                                        </div>
+                                        <div class="pricing-col-c">
+                                            -
+                                        </div>
+                                        <div class="pricing-col-c">
+                                            -
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="row gx-1 mx-1 mt-2 justify-content-center align-items-center text-center">
+                                        <div class="pricing-col-b">
+                                            A3
+                                        </div>
+                                        <div class="pricing-col-c">
+                                            300zł
+                                        </div>
+                                        <div class="pricing-col-c">
+                                            400zł
+                                        </div>
+                                        <div class="pricing-col-c">
+                                            -
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="row gx-1 mx-1 mt-2 justify-content-center align-items-center text-center">
+                                        <div class="pricing-col-b">
+                                            A2
+                                        </div>
+                                        <div class="pricing-col-c">
+                                            650zł
+                                        </div>
+                                        <div class="pricing-col-c">
+                                            800zł
+                                        </div>
+                                        <div class="pricing-col-c">
+                                            950zł
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="row gx-1 mx-1 my-2 justify-content-center align-items-center text-center">
+                                        <div class="pricing-col-b">
+                                            A1
+                                        </div>
+                                        <div class="pricing-col-c">
+                                            1000zł
+                                        </div>
+                                        <div class="pricing-col-c">
+                                            1200zł
+                                        </div>
+                                        <div class="pricing-col-c">
+                                            1400zł
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-lg-4 col-sm-12">
-                                    <button class="btn btn-lg btn-white text-1 order-button" id="packageButton"
-                                        type="button" data-mdb-ripple-init
-                                        style="width:50%;height:100%; background-color: #e1f3ff;">
-                                        <strong>Zwierzęta czarnobiałe</strong> </button>
-                                </div>
-                                <div class="col-lg-4 col-sm-12">
-                                    <button class="btn btn-lg btn-white text-1 order-button" id="packageButton"
+                            </div>
+                            <div class="col-lg-4 col-sm-12 inter-bold500">
+                                <div>
+                                    <button class="btn btn-lg btn-white text-1 car-button" id="packageButton"
                                         type="button" data-mdb-ripple-init
                                         style="width:50%; height:100%; background-color: #e1f3ff;">
                                         <strong>Karykaturki czarnobiałe</strong> </button>
                                 </div>
+
+                                <div class="car-pricing py-2">
+                                    <div class="text-center justify-content-center align-items-center">
+                                        <p class="text-1" style="margin:0;">Ilość obiektów</p>
+                                    </div>
+
+                                    <div class="row gx-1 mx-1 mt-2 justify-content-center ">
+                                        <div class="pricing-col-a">
+                                            Format
+                                        </div>
+                                        <div class="pricing-col-b">
+                                            1
+                                        </div>
+                                        <div class="pricing-col-b">
+                                            2
+                                        </div>
+                                        <div class="pricing-col-b">
+                                            3
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="row gx-1 mx-1 mt-2 justify-content-center align-items-center text-center">
+                                        <div class="pricing-col-b">
+                                            A4
+                                        </div>
+                                        <div class="pricing-col-c">
+                                            200zł
+                                        </div>
+                                        <div class="pricing-col-c">
+                                            -
+                                        </div>
+                                        <div class="pricing-col-c">
+                                            -
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="row gx-1 mx-1 mt-2 justify-content-center align-items-center text-center">
+                                        <div class="pricing-col-b">
+                                            A3
+                                        </div>
+                                        <div class="pricing-col-c">
+                                            300zł
+                                        </div>
+                                        <div class="pricing-col-c">
+                                            400zł
+                                        </div>
+                                        <div class="pricing-col-c">
+                                            -
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="row gx-1 mx-1 mt-2 justify-content-center align-items-center text-center">
+                                        <div class="pricing-col-b">
+                                            A2
+                                        </div>
+                                        <div class="pricing-col-c">
+                                            650zł
+                                        </div>
+                                        <div class="pricing-col-c">
+                                            800zł
+                                        </div>
+                                        <div class="pricing-col-c">
+                                            950zł
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="row gx-1 mx-1 my-2 justify-content-center align-items-center text-center">
+                                        <div class="pricing-col-b">
+                                            A1
+                                        </div>
+                                        <div class="pricing-col-c">
+                                            1000zł
+                                        </div>
+                                        <div class="pricing-col-c">
+                                            1200zł
+                                        </div>
+                                        <div class="pricing-col-c">
+                                            1400zł
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="row gx-lg-2 gx-0 text-center">
-                                <div class="col-lg-4 col-sm-12 car-pricing">
-                                    <div class="row gx-1 mx-1 mt-2 justify-content-center align-items-center text-center">
-                                        <div class="col-3">
-                                            Format / ilość
-                                        </div>
-                                        <div class="col-3" >
-                                            1
-                                        </div>
-                                        <div class="col-3">
-                                            2
-                                        </div>
-                                        <div class="col-3">
-                                            3
-                                        </div>
-                                    </div>
-                                    <div class="row gx-1 mx-1 mt-2 justify-content-center align-items-center text-center">
-                                        <div class="col-3">
-                                            A4
-                                        </div>
-                                        <div class="col-3">
-                                            200zł
-                                        </div>
-                                        <div class="col-3">
-                                            -
-                                        </div>
-                                        <div class="col-3">
-                                            -
-                                        </div>
-                                    </div>
-                                    <div class="row gx-1 mx-1 mt-2 justify-content-center align-items-center text-center">
-                                        <div class="col-3">
-                                            A3
-                                        </div>
-                                        <div class="col-3">
-                                            300zł
-                                        </div>
-                                        <div class="col-3">
-                                            400zł
-                                        </div>
-                                        <div class="col-3">
-                                            -
-                                        </div>
-                                    </div>
-                                    <div class="row gx-1 mx-1 mt-2 justify-content-center align-items-center text-center">
-                                        <div class="col-3">
-                                            A2
-                                        </div>
-                                        <div class="col-3">
-                                            650zł
-                                        </div>
-                                        <div class="col-3">
-                                            800zł
-                                        </div>
-                                        <div class="col-3">
-                                            950zł
-                                        </div>
-                                    </div>
-                                    <div class="row gx-1 mx-1 mt-2 justify-content-center align-items-center text-center">
-                                        <div class="col-3">
-                                            A1
-                                        </div>
-                                        <div class="col-3">
-                                            1000zł
-                                        </div>
-                                        <div class="col-3">
-                                            1200zł
-                                        </div>
-                                        <div class="col-3">
-                                            1400zł
-                                        </div>
-                                    </div>
+                            <div class="col-lg-4 col-sm-12 inter-bold500">
+                                <div>
+                                    <button class="btn btn-lg btn-white text-1 car-button" id="packageButton"
+                                        type="button" data-mdb-ripple-init
+                                        style="width:50%; height:100%; background-color: #e1f3ff;">
+                                        <span style="display:block;"><strong>Zwierzęta</strong></span>
+                                        <span><strong>czarnobiałe</strong></span>
                                 </div>
-                                <div class="col-lg-4 col-sm-12 animal-pricing">
-                                    <div class="row gx-lg-2 gx-1 my-3 mx-3">
-                                        <div class="col-3" style="background-color: #28375e;">
-                                            Format / ilość
+
+                                <div class="car-pricing py-2">
+                                    <div class="text-center justify-content-center align-items-center">
+                                        <p class="text-1" style="margin:0;">Ilość obiektów</p>
+                                    </div>
+
+                                    <div class="row gx-1 mx-1 mt-2 justify-content-center ">
+                                        <div class="pricing-col-a">
+                                            Format
                                         </div>
-                                        <div class="col-3">
+                                        <div class="pricing-col-b">
                                             1
                                         </div>
-                                        <div class="col-3">
+                                        <div class="pricing-col-b">
                                             2
                                         </div>
-                                        <div class="col-3">
+                                        <div class="pricing-col-b">
                                             3
                                         </div>
                                     </div>
-                                    <div class="row gx-lg-2 gx-1">
-                                        <div class="col-3">
+                                    <div
+                                        class="row gx-1 mx-1 mt-2 justify-content-center align-items-center text-center">
+                                        <div class="pricing-col-b">
                                             A4
                                         </div>
-                                        <div class="col-3">
+                                        <div class="pricing-col-c">
                                             200zł
                                         </div>
-                                        <div class="col-3">
+                                        <div class="pricing-col-c">
                                             -
                                         </div>
-                                        <div class="col-3">
+                                        <div class="pricing-col-c">
                                             -
                                         </div>
                                     </div>
-                                    <div class="row gx-lg-2 gx-1">
-                                        <div class="col-3">
+                                    <div
+                                        class="row gx-1 mx-1 mt-2 justify-content-center align-items-center text-center">
+                                        <div class="pricing-col-b">
                                             A3
                                         </div>
-                                        <div class="col-3">
+                                        <div class="pricing-col-c">
                                             300zł
                                         </div>
-                                        <div class="col-3">
+                                        <div class="pricing-col-c">
                                             400zł
                                         </div>
-                                        <div class="col-3">
+                                        <div class="pricing-col-c">
                                             -
                                         </div>
                                     </div>
-                                    <div class="row gx-lg-2 gx-1">
-                                        <div class="col-3">
+                                    <div
+                                        class="row gx-1 mx-1 mt-2 justify-content-center align-items-center text-center">
+                                        <div class="pricing-col-b">
                                             A2
                                         </div>
-                                        <div class="col-3">
+                                        <div class="pricing-col-c">
                                             650zł
                                         </div>
-                                        <div class="col-3">
+                                        <div class="pricing-col-c">
                                             800zł
                                         </div>
-                                        <div class="col-3">
+                                        <div class="pricing-col-c">
                                             950zł
                                         </div>
                                     </div>
-                                    <div class="row gx-lg-2 gx-1">
-                                        <div class="col-3">
+                                    <div
+                                        class="row gx-1 mx-1 my-2 justify-content-center align-items-center text-center">
+                                        <div class="pricing-col-b">
                                             A1
                                         </div>
-                                        <div class="col-3">
+                                        <div class="pricing-col-c">
                                             1000zł
                                         </div>
-                                        <div class="col-3">
+                                        <div class="pricing-col-c">
                                             1200zł
                                         </div>
-                                        <div class="col-3">
-                                            1400zł
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-sm-12 caricature-pricing">
-                                    <div class="row gx-lg-2 gx-1 my-3 mx-3">
-                                        <div class="col-3" style="background-color: #28375e;">
-                                            Format / ilość
-                                        </div>
-                                        <div class="col-3">
-                                            1
-                                        </div>
-                                        <div class="col-3">
-                                            2
-                                        </div>
-                                        <div class="col-3">
-                                            3
-                                        </div>
-                                    </div>
-                                    <div class="row gx-lg-2 gx-1">
-                                        <div class="col-3">
-                                            A4
-                                        </div>
-                                        <div class="col-3">
-                                            200zł
-                                        </div>
-                                        <div class="col-3">
-                                            -
-                                        </div>
-                                        <div class="col-3">
-                                            -
-                                        </div>
-                                    </div>
-                                    <div class="row gx-lg-2 gx-1">
-                                        <div class="col-3">
-                                            A3
-                                        </div>
-                                        <div class="col-3">
-                                            300zł
-                                        </div>
-                                        <div class="col-3">
-                                            400zł
-                                        </div>
-                                        <div class="col-3">
-                                            -
-                                        </div>
-                                    </div>
-                                    <div class="row gx-lg-2 gx-1">
-                                        <div class="col-3">
-                                            A2
-                                        </div>
-                                        <div class="col-3">
-                                            650zł
-                                        </div>
-                                        <div class="col-3">
-                                            800zł
-                                        </div>
-                                        <div class="col-3">
-                                            950zł
-                                        </div>
-                                    </div>
-                                    <div class="row gx-lg-2 gx-1">
-                                        <div class="col-3">
-                                            A1
-                                        </div>
-                                        <div class="col-3">
-                                            1000zł
-                                        </div>
-                                        <div class="col-3">
-                                            1200zł
-                                        </div>
-                                        <div class="col-3">
+                                        <div class="pricing-col-c">
                                             1400zł
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <a href="https://www.instagram.com/stories/highlights/18071504287588132/">Kliknij w napis, aby
-                            przejść do cennika.</a>
-                    </div>
-                    <div class="col-12 text-center">
-                        <h2 class="text-1">Opinie</h2>
-                        <p>Wkrótce...</p>
                     </div>
                 </div>
+                <div class="col-12 text-center mt-3">
+                    <h2 class="text-1">Opinie</h2>
+                    <p>Wkrótce...</p>
+                </div>
             </div>
-        </section>
-
+        </div>
     </main>
 
     <!-- Footer -->
