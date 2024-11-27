@@ -4,7 +4,7 @@
         style="background-color: #e1f3ff; z-index:3; min-height:70px;">
         <div class="container-fluid justify-content-lg-center">
             <!-- Logo -->
-            <a class="navbar-brand" href="index> <img src="/img/logo3.png" alt="Rysunkinaprezent Logo"
+            <a class="navbar-brand" href="index"> <img src="/img/logo3.png" alt="Rysunkinaprezent Logo"
                     loading="lazy" style="width: 40px; height:40px;" /></a>
 
             <!-- Toggle button (mobile view)-->
