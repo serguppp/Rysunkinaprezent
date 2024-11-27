@@ -7,6 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="description"
         content="Rysunki na prezent - zamień zdjęcie w wyjątkowy upominek. Skontaktuj się z nami!" />
+    <link rel="canonical" href="https://www.rysunkinaprezent.com"/>
     <title>Rysunki na prezent</title>
 
     <?php include 'head.php'; ?>

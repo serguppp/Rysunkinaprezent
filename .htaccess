@@ -4,7 +4,7 @@ Options -Indexes
 Options +FollowSymLinks
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^rysunkinaprezent.com [nc]
-RewriteRule ^(.*)$ http://www.rysunkinaprezent.com/$1 [r=301,nc]
+RewriteRule ^(.*)$ https://www.rysunkinaprezent.com/$1 [r=301,nc]
 
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/index\.php [NC]
 RewriteRule ^index\.php$ / [R=301]
