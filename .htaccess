@@ -6,15 +6,13 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^rysunkinaprezent.com [nc]
 RewriteRule ^(.*)$ http://www.rysunkinaprezent.com/$1 [r=301,nc]
 
-# Przekierowanie ze starego URL na nowy bez rozszerzenia .html
-RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
-RewriteRule ^ /%1 [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/index\.php [NC]
+RewriteRule ^index\.php$ / [R=301]
 
-# Przekierowanie ze starego URL na nowy bez rozszerzenia PHP
-RewriteCond %{THE_REQUEST} \s/([^.]+)\.php [NC]
-RewriteRule ^ /%1 [R=301,L]
+RewriteRule zamowienia orders.php
+RewriteRule galeria gallery.php
+RewriteRule zwierzeta animalgallery.php 
+RewriteRule samochody cargallery.php 
+RewriteRule karykaturki caricaturegallery.php 
 
-# Obsługa adresów bez rozszerzeń
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([^/]+)/?$ $1.php [L]
+

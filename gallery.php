@@ -29,7 +29,7 @@
                     <div class="card">
                         <div class="bg-image hover-overlay ripple" data-mdb-ripple-init data-mdb-ripple-color="black">
                             <img src="img/zw-1-t.png" class="img-fluid" alt="Rysunki zwierząt" />
-                            <a href="animalgallery.php">
+                            <a href="zwierzeta">
                                 <div class="mask" style="background-color: rgba(225, 243, 255, 0.35);"></div>
                             </a>
                         </div>
@@ -42,7 +42,7 @@
                     <div class="card">
                         <div class="bg-image hover-overlay ripple" data-mdb-ripple-init data-mdb-ripple-color="black">
                             <img src="img/auto-2-t.png" class="img-fluid" alt="Rysunki zwierząt" />
-                            <a href="cargallery.php">
+                            <a href="samochody">
                                 <div class="mask" style="background-color: rgba(225, 243, 255, 0.35);"></div>
                             </a>
                         </div>
@@ -55,7 +55,7 @@
                     <div class="card">
                         <div class="bg-image hover-overlay ripple" data-mdb-ripple-init data-mdb-ripple-color="black">
                             <img src="img/kar-poz-1-t.png" class="img-fluid" alt="Rysunki zwierząt" />
-                            <a href="caricaturegallery.php">
+                            <a href="karykaturki">
                                 <div class="mask" style="background-color: rgba(225, 243, 255, 0.35);"></div>
                             </a>
                         </div>

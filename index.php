@@ -232,7 +232,7 @@
 
                     let formData = new FormData(this);
 
-                    fetch("send_email", {
+                    fetch("send_email.php", {
                             method: "POST",
                             body: formData
                         })
@@ -255,6 +255,13 @@
         });
     </script>
 
+    <script>
+    if (window.location.hash === "#contact") {
+        window.onload = function() {
+        document.getElementById("contact").scrollIntoView();
+        };
+    }
+    </script>
 
 </body>
 
