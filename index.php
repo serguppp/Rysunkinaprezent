@@ -232,7 +232,7 @@
 
                     let formData = new FormData(this);
 
-                    fetch("send_email.php", {
+                    fetch("send_email", {
                             method: "POST",
                             body: formData
                         })

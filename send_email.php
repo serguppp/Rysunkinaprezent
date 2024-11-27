@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars($_POST['message']);
 
     if (!empty($name) && !empty($email) && !empty($message)) {
-        $to = "serg.u@wp.pl";
+        $to = "kontakt@rysunkinaprezent.com";
         $subject = "Nowa wiadomość z formularza kontaktowego";
         $body = "Imię: $name\nEmail: $email\nWiadomość:\n$message";
         $headers = "From: $email";
