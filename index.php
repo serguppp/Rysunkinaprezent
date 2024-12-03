@@ -7,17 +7,17 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="description"
         content="Rysunki na prezent - zamień zdjęcie w wyjątkowy upominek. Skontaktuj się z nami!" />
-    <link rel="canonical" href="https://www.rysunkinaprezent.com"/>
+    <link rel="canonical" href="https://www.rysunkinaprezent.com" />
     <title>Rysunki na prezent</title>
 
-    <?php include 'head.php'; ?>
+    <?php require_once 'head.php'; ?>
     <link rel="stylesheet" href="css/index.css?v=1.1.0">
 </head>
 
 <body>
     <!--Main Navigation-->
     <header>
-        <?php include 'navbar.php'; ?>
+        <?php require_once 'navbar.php'; ?>
     </header>
 
     <!--Main Navigation-->
@@ -159,11 +159,14 @@
 
     <!--Footer-->
     <footer>
-        <?php include 'footer.php'; ?>
+        <?php require_once 'footer.php'; ?>
     </footer>
     <!--Footer-->
+
     <!-- MDB -->
     <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+
+    <!-- Carousel -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             let multipleCardCarousel = document.querySelector("#offerCarousel");
@@ -203,6 +206,7 @@
         });
     </script>
 
+    <!-- About me -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const aboutContent = document.getElementById('aboutContent');
@@ -223,13 +227,14 @@
         });
     </script>
 
+    <!-- Form -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const form = document.getElementById("contactForm");
 
             if (form) {
                 form.addEventListener("submit", function(event) {
-                    event.preventDefault(); // Prevent the form from submitting the traditional way
+                    event.preventDefault();
 
                     let formData = new FormData(this);
 
@@ -242,7 +247,7 @@
                             if (result.trim() === "success") {
                                 alert("Wiadomość została wysłana pomyślnie!");
                             } else {
-                                alert(result); 
+                                alert(result);
                             }
                         })
                         .catch(error => {
@@ -256,12 +261,13 @@
         });
     </script>
 
+    <!-- Contact scroll -->
     <script>
-    if (window.location.hash === "#contact") {
-        window.onload = function() {
-        document.getElementById("contact").scrollIntoView();
-        };
-    }
+        if (window.location.hash === "#contact") {
+            window.onload = function() {
+                document.getElementById("contact").scrollIntoView();
+            };
+        }
     </script>
 
 </body>
