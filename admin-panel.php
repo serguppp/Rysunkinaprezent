@@ -17,7 +17,7 @@ if (!isset($_SESSION['logged_in'])) {
 
 <body>
     <h1>Witaj, admin!</h1>
-    <a href="admin-logging-system.php?logout=1">Wyloguj się</a>
+    <a href="includes/admin-logging-system.php?logout=1">Wyloguj się</a>
 </body>
 
 </html>

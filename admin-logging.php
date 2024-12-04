@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_SESSION['logged_in'])) {
-    header("Location: admin-system.php");
+    header("Location: admin-panel.php");
     exit;
 }
 ?>

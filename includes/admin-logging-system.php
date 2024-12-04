@@ -20,6 +20,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['logout'])) {
     header('Content-Type: application/json');
     echo json_encode($response);
 
-    header("Location: admin-logging.php");
+    header("Location: ../admin-logging.php");
     exit;
 }
