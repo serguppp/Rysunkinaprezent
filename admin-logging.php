@@ -1,5 +1,10 @@
 <?php
 session_start();
+
+if (isset($_SESSION['logged_in'])) {
+    header("Location: admin-system.php");
+    exit;
+}
 ?>
 
 <!DOCTYPE html>
@@ -17,19 +22,11 @@ session_start();
 </head>
 
 <body>
-    <?php
-    if (isset($_SESSION['logged_in'])) {
-        header("Location: admin.php");
-    } else {
-    ?>
-        <form id="loginForm" class="form">
-            <input type="login" name="login" />
-            <input type="password" name="password" />
-            <input type="submit" value="zaloguj się" />
-        </form>
-    <?php
-    }
-    ?>
+    <form id="loginForm" class="form">
+        <input type="login" name="login" />
+        <input type="password" name="password" />
+        <input type="submit" value="zaloguj się" />
+    </form>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -49,14 +46,14 @@ session_start();
                         return;
                     }
 
-                    fetch("login.php", {
+                    fetch("admin-logging-system.php", {
                             method: "POST",
                             body: formData
                         })
                         .then(response => response.json())
                         .then(result => {
                             if (result.success) {
-                                window.location.href = "admin.php";
+                                window.location.href = "admin-panel.php";
                             } else {
                                 alert(result.message);
                             }
