@@ -1,5 +1,5 @@
 <?php
-require_once('includes/login-handler.php');
+require_once('login-handler.php');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $login = htmlspecialchars($_POST['login']);

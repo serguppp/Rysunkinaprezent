@@ -17,7 +17,7 @@ if (isset($_SESSION['logged_in'])) {
     <meta name="description" content="Panel administratora" />
     <title>Panel administratora | Rysunki na prezent</title>
 
-    <?php include 'head.php'; ?>
+    <?php require_once 'includes/head.php'; ?>
     <link rel="stylesheet" href="css/gallery.css?v=1.1.0">
 </head>
 
