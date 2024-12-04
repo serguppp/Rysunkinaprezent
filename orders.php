@@ -8,14 +8,14 @@
     <meta name="description" content="Zamówienia - zamień zdjęcie w rysunek!" />
     <title>Zamówienia | Rysunki na prezent</title>
 
-    <?php include 'head.php'; ?>
+    <?php require_once 'includes/head.php'; ?>
     <link rel="stylesheet" href="css/orders.css?v=1.1.0">
 </head>
 
 <body>
     <!-- Main Navigation -->
     <header>
-        <?php include 'navbar.php'; ?>
+        <?php require_once 'includes/navbar.php'; ?>
     </header>
 
     <!-- Main layout -->
@@ -394,7 +394,7 @@
 
     <!-- Footer -->
     <footer>
-        <?php include 'footer.php'; ?>
+        <?php require_once 'includes/footer.php'; ?>
     </footer>
 
     <!-- MDB -->

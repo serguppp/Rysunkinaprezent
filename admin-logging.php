@@ -46,7 +46,7 @@ if (isset($_SESSION['logged_in'])) {
                         return;
                     }
 
-                    fetch("admin-logging-system.php", {
+                    fetch("includes/admin-logging-system.php", {
                             method: "POST",
                             body: formData
                         })

@@ -10,14 +10,14 @@
     <link rel="canonical" href="https://www.rysunkinaprezent.com" />
     <title>Rysunki na prezent</title>
 
-    <?php require_once 'head.php'; ?>
+    <?php require_once 'includes/head.php'; ?>
     <link rel="stylesheet" href="css/index.css?v=1.1.0">
 </head>
 
 <body>
     <!--Main Navigation-->
     <header>
-        <?php require_once 'navbar.php'; ?>
+        <?php require_once 'includes/navbar.php'; ?>
     </header>
 
     <!--Main Navigation-->
@@ -159,7 +159,7 @@
 
     <!--Footer-->
     <footer>
-        <?php require_once 'footer.php'; ?>
+        <?php require_once 'includes/footer.php'; ?>
     </footer>
     <!--Footer-->
 
@@ -238,7 +238,7 @@
 
                     let formData = new FormData(this);
 
-                    fetch("send_email.php", {
+                    fetch("includes/send_email.php", {
                             method: "POST",
                             body: formData
                         })

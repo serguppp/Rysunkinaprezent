@@ -8,14 +8,14 @@
     <meta name="description" content="Galeria rysunków - zobacz nasze wyjątkowe prace!" />
     <title>Rysunki zwierząt | Rysunki na prezent</title>
 
-    <?php include 'head.php'; ?>
+    <?php require_once 'includes/head.php'; ?>
     <link rel="stylesheet" href="css/gallery.css?v=1.1.0">
 </head>
 
 <body>
     <!-- Main Navigation -->
     <header>
-        <?php include 'head.php'; ?>
+        <?php require_once 'includes/head.php'; ?>
     </header>
 
     <!-- Main layout -->
@@ -41,7 +41,7 @@
 
     <!-- Footer -->
     <footer>
-        <?php include 'footer.php'; ?>
+        <?php require_once 'includes/footer.php'; ?>
     </footer>
 
     <!-- MDB -->
