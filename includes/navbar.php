@@ -4,7 +4,7 @@
         style="background-color: #e1f3ff; z-index:3; min-height:70px;">
         <div class="container-fluid justify-content-lg-center">
             <!-- Logo -->
-            <a class="navbar-brand" href="index.php"> <img src="/img/logo3.png" alt="Rysunkinaprezent Logo"
+            <a class="navbar-brand" href="."> <img src="img/logo3.png" alt="Rysunkinaprezent Logo"
                     loading="lazy" style="width: 40px; height:40px;" /></a>
 
             <!-- Toggle button (mobile view)-->
@@ -19,7 +19,7 @@
                 <!-- Left links -->
                 <ul class="navbar-nav text-center">
                     <li class="nav-item">
-                        <a class="nav-link inter-bold text-1" href="orders.php">Zamówienia</a>
+                        <a class="nav-link inter-bold text-1" href="zamowienia">Zamówienia</a>
                     </li>
                     <!-- Navbar dropdown 
                             <li class="nav-item dropdown">
@@ -46,16 +46,16 @@
                                 </ul>
                             </li> -->
                     <li class="nav-item">
-                        <a class="nav-link inter-bold text-1" href="gallery.php">Galeria</a>
+                        <a class="nav-link inter-bold text-1" href="galeria">Galeria</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link inter-bold text-1" href="index.php#contact">Kontakt</a>
+                        <a class="nav-link inter-bold text-1" href="./#contact">Kontakt</a>
                     </li>
                 </ul>
                 <!-- Icons -->
                 <ul class="navbar-nav justify-content-center flex-row">
                     <li class="nav-item me-3 me-lg-0">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="https://www.facebook.com/profile.php?id=61565376135583">
                             <i class="fab fa-2x fa-facebook text-1"></i>
                         </a>
                     </li>

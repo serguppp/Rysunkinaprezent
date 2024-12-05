@@ -2,13 +2,11 @@
 
 .break {
     display: inline;
-    /* Wyświetlaj w jednej linii */
 }
 
 @media (max-width: 360px) {
     .break {
         display: block;
-        /* Zmieniaj na blok, by wprowadzić łamanie linii */
     }
 }
 
@@ -16,7 +14,6 @@
 body,
 html {
     overflow-x: hidden;
-    /* To block horizontal scrolling */
 }
 
 .welcome-content {

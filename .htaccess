@@ -4,15 +4,14 @@ Options -Indexes
 Options +FollowSymLinks
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^rysunkinaprezent.com [nc]
-RewriteRule ^(.*)$ http://www.rysunkinaprezent.com/$1 [r=301,nc]
+RewriteRule ^(.*)$ https://www.rysunkinaprezent.com/$1 [r=301,nc]
 
-# Przekierowanie ze starego URL na nowy bez rozszerzenia .html
-RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
-RewriteRule ^ /%1 [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/index\.php [NC]
+RewriteRule ^index\.php$ / [R=301]
 
-# Gdy plik .html istnieje, wstaw automatycznie rozszerzenie .html
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^ %{REQUEST_URI}.html [L]
+RewriteRule zamowienia orders.php
+RewriteRule galeria gallery.php
+RewriteRule zwierzeta animalgallery.php 
+RewriteRule samochody cargallery.php 
+RewriteRule karykaturki caricaturegallery.php 
 
-RewriteRule ^index/$ index.html [L]

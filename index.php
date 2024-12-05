@@ -7,16 +7,17 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="description"
         content="Rysunki na prezent - zamień zdjęcie w wyjątkowy upominek. Skontaktuj się z nami!" />
+    <link rel="canonical" href="https://www.rysunkinaprezent.com" />
     <title>Rysunki na prezent</title>
 
-    <?php include 'head.php'; ?>
+    <?php require_once 'includes/head.php'; ?>
     <link rel="stylesheet" href="css/index.css?v=1.1.0">
 </head>
 
 <body>
     <!--Main Navigation-->
     <header>
-        <?php include 'navbar.php'; ?>
+        <?php require_once 'includes/navbar.php'; ?>
     </header>
 
     <!--Main Navigation-->
@@ -114,7 +115,7 @@
         <!-- contact section-->
         <section class="container-fluid" id="contact">
             <div class="bg-image"> </div>
-            <div class="row form-style d-flex justify-content-center align-items-center">
+            <div class="row d-flex justify-content-center align-items-center form-style ">
                 <div class="col-lg-6 col-sm-12 col-md-8 d-flex justify-content-center align-items-center flex-column"
                     style="min-height: 100%;">
                     <h3 class="text-center inter-bold text-1">Skontaktuj się ze mną</h3>
@@ -158,11 +159,14 @@
 
     <!--Footer-->
     <footer>
-        <?php include 'footer.php'; ?>
+        <?php require_once 'includes/footer.php'; ?>
     </footer>
     <!--Footer-->
+
     <!-- MDB -->
     <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+
+    <!-- Carousel -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             let multipleCardCarousel = document.querySelector("#offerCarousel");
@@ -202,6 +206,7 @@
         });
     </script>
 
+    <!-- About me -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const aboutContent = document.getElementById('aboutContent');
@@ -222,17 +227,18 @@
         });
     </script>
 
+    <!-- Form -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const form = document.getElementById("contactForm");
 
             if (form) {
                 form.addEventListener("submit", function(event) {
-                    event.preventDefault(); // Prevent the form from submitting the traditional way
+                    event.preventDefault();
 
                     let formData = new FormData(this);
 
-                    fetch("send_email.php", {
+                    fetch("includes/send_email.php", {
                             method: "POST",
                             body: formData
                         })
@@ -241,7 +247,7 @@
                             if (result.trim() === "success") {
                                 alert("Wiadomość została wysłana pomyślnie!");
                             } else {
-                                alert(result); 
+                                alert(result);
                             }
                         })
                         .catch(error => {
@@ -255,6 +261,14 @@
         });
     </script>
 
+    <!-- Contact scroll -->
+    <script>
+        if (window.location.hash === "#contact") {
+            window.onload = function() {
+                document.getElementById("contact").scrollIntoView();
+            };
+        }
+    </script>
 
 </body>
 

@@ -30,7 +30,13 @@
     color: rgb(28, 49, 81);
 }
 
+.text-red{
+    color:red;
+}
 
+.btn-primary.common-button{
+    background-color: #28375e;
+}
 /* dropdown menu */
 @media (max-width: 991.98px) {
     .dropdown-menu {
