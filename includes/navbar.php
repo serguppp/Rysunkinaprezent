@@ -4,7 +4,7 @@
         style="background-color: #e1f3ff; z-index:3; min-height:70px;">
         <div class="container-fluid justify-content-lg-center">
             <!-- Logo -->
-            <a class="navbar-brand" href="/"> <img src="/img/logo3.png" alt="Rysunkinaprezent Logo"
+            <a class="navbar-brand" href="."> <img src="img/logo3.png" alt="Rysunkinaprezent Logo"
                     loading="lazy" style="width: 40px; height:40px;" /></a>
 
             <!-- Toggle button (mobile view)-->
@@ -49,7 +49,7 @@
                         <a class="nav-link inter-bold text-1" href="galeria">Galeria</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link inter-bold text-1" href="/#contact">Kontakt</a>
+                        <a class="nav-link inter-bold text-1" href="./#contact">Kontakt</a>
                     </li>
                 </ul>
                 <!-- Icons -->

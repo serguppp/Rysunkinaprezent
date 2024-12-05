@@ -115,7 +115,7 @@
         <!-- contact section-->
         <section class="container-fluid" id="contact">
             <div class="bg-image"> </div>
-            <div class="row form-style d-flex justify-content-center align-items-center">
+            <div class="row d-flex justify-content-center align-items-center form-style ">
                 <div class="col-lg-6 col-sm-12 col-md-8 d-flex justify-content-center align-items-center flex-column"
                     style="min-height: 100%;">
                     <h3 class="text-center inter-bold text-1">Skontaktuj się ze mną</h3>

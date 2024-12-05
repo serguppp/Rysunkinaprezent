@@ -18,19 +18,44 @@ if (isset($_SESSION['logged_in'])) {
     <title>Panel administratora | Rysunki na prezent</title>
 
     <?php require_once 'includes/head.php'; ?>
-    <link rel="stylesheet" href="css/gallery.css?v=1.1.0">
+    <link rel="stylesheet" href="css/admin-logging.css?v=1.0.0">
 </head>
 
 <body>
-    <form id="loginForm" class="form">
-        <input type="login" name="login" />
-        <input type="password" name="password" />
-        <input type="submit" value="zaloguj się" />
-    </form>
+    <header>
+        <?php require_once 'includes/navbar.php'; ?>
+    </header>
+    <main>
+        <section>
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="logging-panel col-12 d-flex justify-content-center align-items-center flex-column ">
+                        <h1 class="text-1 inter-bold">Panel administratora</h1>
+
+                        <div>
+                            <form id="loginForm" class="form mt-3">
+                                <div>
+                                    <div class="form-outline mt-3 " data-mdb-input-init>
+                                        <input type="text" name="login" placeholder="login" class="form-control bg-white">
+                                    </div>
+
+                                    <div class="form-outline mt-3" data-mdb-input-init>
+                                        <input type="password" name="password" placeholder="hasło" class="form-control bg-white">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary common-button btn-block  mt-3" data-mdb-ripple-init>Zaloguj się</button>
+                            </form>
+
+                            <h4 id="loginError" class="text-danger inter-bold400 login-error-string text-center mt-3"></h4>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const form = document.getElementById("loginForm");
+            let loginError = document.getElementById("loginError");
 
             if (form) {
                 form.addEventListener("submit", function(event) {
@@ -42,7 +67,8 @@ if (isset($_SESSION['logged_in'])) {
                     const password = formData.get('password');
 
                     if (!login || !password) {
-                        alert("Proszę wprowadzić login i hasło.");
+                        console.error("Proszę wprowadzić login i hasło.");
+                        loginError.textContent = "Proszę wprowadzić login i hasło."
                         return;
                     }
 
@@ -55,12 +81,13 @@ if (isset($_SESSION['logged_in'])) {
                             if (result.success) {
                                 window.location.href = "admin-panel.php";
                             } else {
-                                alert(result.message);
+                                console.error(result.message);
+                                loginError.textContent = result.message;
                             }
                         })
                         .catch(error => {
-                            console.error("Error:", error);
-                            alert("Wystąpił błąd. Proszę spróbować później.");
+                            console.error("console.error:", error);
+                            loginError.textContent = "Wystąpił błąd. Proszę spróbować później.";
                         });
                 });
             } else {

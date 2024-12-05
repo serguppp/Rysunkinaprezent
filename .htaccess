@@ -15,4 +15,3 @@ RewriteRule zwierzeta animalgallery.php
 RewriteRule samochody cargallery.php 
 RewriteRule karykaturki caricaturegallery.php 
 
-
