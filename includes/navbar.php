@@ -1,10 +1,10 @@
 <div style="height:70px;">
     <!-- Navbar brand -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light px-0"
-        style="background-color: #e1f3ff; z-index:3; min-height:70px;">
+    <nav class="nav-color navbar navbar-expand-lg fixed-top navbar-light px-0"
+        style="z-index:3; min-height:70px;">
         <div class="container-fluid justify-content-lg-center">
             <!-- Logo -->
-            <a class="navbar-brand" href="."> <img src="img/logo3.png" alt="Rysunkinaprezent Logo"
+            <a class="navbar-brand" href="./"> <img src="img/logo3.png" alt="Rysunkinaprezent Logo"
                     loading="lazy" style="width: 40px; height:40px;" /></a>
 
             <!-- Toggle button (mobile view)-->
@@ -21,30 +21,6 @@
                     <li class="nav-item">
                         <a class="nav-link inter-bold text-1" href="zamowienia">Zamówienia</a>
                     </li>
-                    <!-- Navbar dropdown 
-                            <li class="nav-item dropdown">
-                                <a data-mdb-dropdown-init class="inter-bold text-1 nav-link dropdown-toggle"
-                                    href="orders.html" id="navbarDropdown" role="button" aria-expanded="false">
-                                    Zamówienia
-                                </a>
-                                <-- Dropdown menu 
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li>
-                                        <a class="inter-bold500  dropdown-item" href="orders.html">Jak złożyć
-                                            zamówienie?</a>
-                                    </li>
-                                    <li>
-                                        <a class="inter-bold500 dropdown-item" href="orders.html">Cennik</a>
-                                    </li>
-                                    <li>
-                                        <a class="inter-bold500 dropdown-item" href="orders.html">Pakowanie zamówień</a>
-                                    </li>
-                                    <li>
-                                        <a class="inter-bold500 dropdown-item" href="orders.html">Opinie klientów</a>
-                                    </li>
-                                    --
-                                </ul>
-                            </li> -->
                     <li class="nav-item">
                         <a class="nav-link inter-bold text-1" href="galeria">Galeria</a>
                     </li>

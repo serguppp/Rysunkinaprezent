@@ -21,7 +21,7 @@
     <!-- Main layout -->
     <main>
         <div class="container-fluid mb-4 mb-lg-4">
-            <div class="my-2 my-lg-4">
+            <div class="my-2 my-lg-3">
                 <h1 class="text-center inter-bold text-1">Galeria</h1>
             </div>
             <div class="row gx-2 gy-5 gy-lg-0">

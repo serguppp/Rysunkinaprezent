@@ -1,3 +1,4 @@
+    <?php require_once "version-manager.php" ?>
     <!-- Bootstrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- MDB icon -->
@@ -14,4 +15,8 @@
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
     <!-- Css-->
-    <link rel="stylesheet" href="css/styles.css?v=1.1.2">
+    <link rel="stylesheet" href="css/index.css?v=<?php echo filemtime("css/index.css");?>">
+    <link rel="stylesheet" href="css/styles.css?v=<?php echo filemtime("css/styles.css");?>">
+    <link rel="stylesheet" href="css/navbar.css?v=<?php echo filemtime("css/navbar.css");?>">
+    <link rel="stylesheet" href="css/gallery.css?v=<?php echo filemtime("css/gallery.css");?>">
+

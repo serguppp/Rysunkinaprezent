@@ -18,7 +18,7 @@ if (isset($_SESSION['logged_in'])) {
     <title>Panel administratora | Rysunki na prezent</title>
 
     <?php require_once 'includes/head.php'; ?>
-    <link rel="stylesheet" href="css/admin-logging.css?v=1.0.0">
+    <link rel="stylesheet" href="css/admin-logging.css?v=1.0.2">
 </head>
 
 <body>
@@ -26,30 +26,28 @@ if (isset($_SESSION['logged_in'])) {
         <?php require_once 'includes/navbar.php'; ?>
     </header>
     <main>
-        <section>
-            <div class="container-fluid">
-                <div class="row d-flex justify-content-center align-items-center">
-                    <div class="logging-panel col-12 d-flex justify-content-center align-items-center flex-column ">
-                        <h1 class="text-1 inter-bold">Panel administratora</h1>
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="logging-panel col-12 d-flex justify-content-center align-items-center flex-column ">
+                    <h1 class="text-1 inter-bold">Panel administratora</h1>
 
-                        <div>
-                            <form id="loginForm" class="form mt-3">
-                                <div>
-                                    <div class="form-outline mt-3 " data-mdb-input-init>
-                                        <input type="text" name="login" placeholder="login" class="form-control bg-white">
-                                    </div>
+                    <div>
+                        <form id="loginForm" class="form mt-3">
+                            <div>
+                                <div class="form-outline mt-3 " data-mdb-input-init>
+                                    <input type="text" name="login" placeholder="login" class="form-control bg-white">
+                                </div>
 
-                                    <div class="form-outline mt-3" data-mdb-input-init>
-                                        <input type="password" name="password" placeholder="hasło" class="form-control bg-white">
-                                    </div>
-                                    <button type="submit" class="btn btn-primary common-button btn-block  mt-3" data-mdb-ripple-init>Zaloguj się</button>
-                            </form>
+                                <div class="form-outline mt-3" data-mdb-input-init>
+                                    <input type="password" name="password" placeholder="hasło" class="form-control bg-white">
+                                </div>
+                                <button type="submit" class="btn btn-primary common-button btn-block  mt-3" data-mdb-ripple-init>Zaloguj się</button>
+                        </form>
 
-                            <h4 id="loginError" class="text-danger inter-bold400 login-error-string text-center mt-3"></h4>
-                        </div>
+                        <h4 id="loginError" class="text-danger inter-bold400 login-error-string text-center mt-3"></h4>
                     </div>
                 </div>
-        </section>
+            </div>
     </main>
 
     <script>

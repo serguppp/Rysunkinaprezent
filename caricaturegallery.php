@@ -9,8 +9,6 @@
     <title>Karykaturki | Rysunki na prezent</title>
 
     <?php require_once 'includes/head.php'; ?>
-
-    <link rel="stylesheet" href="css/gallery.css?v=1.1.0">
 </head>
 
 <body>
