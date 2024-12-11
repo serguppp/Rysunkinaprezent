@@ -7,7 +7,6 @@ if (!isset($_SESSION['logged_in'])) {
 }
 
 require_once './includes/editor.php';
-require_once './includes/version-manager.php';
 
 $site = new Site('includes/navbar.php', 'css/navbar.css');
 
